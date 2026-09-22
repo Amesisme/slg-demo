@@ -25,17 +25,16 @@ function displayCustomers(customerList) {
 
         customerCard.className = "customer-card";
 
-        customerCard.onclick = function() {
-    showCustomerDetails(customer.id);
-};
-
         customerCard.innerHTML = `
             <h2>${customer.name}</h2>
             <p><strong>Phone:</strong> ${customer.phone}</p>
             <p><strong>Address:</strong> ${customer.address}</p>
-            <p><strong>Alternative Address:</strong> ${customer.alternativeAddress}</p>
             <p><strong>Orders:</strong> ${customerOrders.length}</p>
         `;
+
+        customerCard.addEventListener("click", function() {
+            showCustomerDetails(customer.id);
+        });
 
         customerContainer.appendChild(customerCard);
     });
@@ -54,7 +53,6 @@ function searchCustomers() {
     displayCustomers(filteredCustomers);
 }
 
-loadData();
 function showCustomerDetails(customerId) {
     const customer = customers.find(
         customer => customer.id === customerId
@@ -98,3 +96,5 @@ function showCustomerDetails(customerId) {
         </div>
     `;
 }
+
+loadData();
