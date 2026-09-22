@@ -1,23 +1,67 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>CRM Demo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: #f5f6f8;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        .search-box {
+            margin: 20px 0;
+        }
+
+        input {
+            padding: 12px;
+            width: 300px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .customer-card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .customer-card h2 {
+            margin-top: 0;
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>CRM Dashboard</h1>
+    <h1>Customer Search</h1>
 
-    <p>Welcome to the CRM demo.</p>
+    <div class="search-box">
+        <input
+            type="text"
+            id="customerSearch"
+            placeholder="Search for a customer..."
+            onkeyup="searchCustomers()"
+        >
+    </div>
 
-    <h2>Customers</h2>
-    <p>25 Active Customers</p>
+    <div id="customerList"></div>
 
-    <h2>Orders</h2>
-    <p>142 Total Orders</p>
-
-    <h2>Products</h2>
-    <p>18 Products</p>
+    <script src="js/app.js"></script>
 
 </body>
+
 </html>
