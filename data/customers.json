@@ -1,0 +1,30 @@
+[
+  {
+    "id": "C001",
+    "name": "Maggie Cummings",
+    "phone": "+1 735 567 4221",
+    "address": "0523 Bellevue Ave, Florida 32789",
+    "alternativeAddress": "2305 Bellevue Ave, Florida 32789"
+  },
+  {
+    "id": "C002",
+    "name": "Megan Cunningham",
+    "phone": "+1 735 567 4288",
+    "address": "1427 Bellevue Ave, Florida 32789",
+    "alternativeAddress": "2815 Oak Street, Florida 32789"
+  },
+  {
+    "id": "C003",
+    "name": "Maria Collins",
+    "phone": "+1 735 567 4314",
+    "address": "0916 Palm Avenue, Florida 32789",
+    "alternativeAddress": "1842 Bellevue Ave, Florida 32789"
+  },
+  {
+    "id": "C004",
+    "name": "Madison Carter",
+    "phone": "+1 735 567 4456",
+    "address": "3210 Lakeview Drive, Florida 32789",
+    "alternativeAddress": "1108 Pine Street, Florida 32789"
+  }
+]
